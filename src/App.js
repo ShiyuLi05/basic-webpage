@@ -1,13 +1,20 @@
-import logo from './logo.png';
-import './App.css';
+import './style/index.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 function App() {
+  let title = 'Mr. Coal';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <main>
+      <>
+        <Header title={title} />
+        <Banner />
+        <Gallery />
+        <Footer />
+      </>
+    </main>
   );
 }
 
